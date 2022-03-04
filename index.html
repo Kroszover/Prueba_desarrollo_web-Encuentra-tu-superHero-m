@@ -43,6 +43,10 @@
             <img id="img-navbar" src="assets/img/sh2.jpg" alt="logo-nav" width="30" height="24" class="d-inline-block align-text-top">
             <strong> SuperHero </strong> 
           </a>
+          <audio id="au" controls preload autoplay>
+<source src="/assets/mp3/01 Hero Skillet Awake.mp3" type="audio/mp3">
+Tu navegador no soporta audio HTML5.
+</audio>
         </div>
       </nav>
     </section>
@@ -61,21 +65,33 @@
 
 
     <section> <!--formulario-->
-      <form>
-        <div class="row w-50 m-auto">
-          <div class="col-12 col-sm-6">
-            <label>Ingrese el id del Superheroe</label>
-          </div>
+        <div class="container">   
+            <div class="card">
+        
+              <div class="card text-center border-info">
+                <div class="card-body">
+                    <h5 class="card-title">busca tu superheroe por id</h5><br>
+                    <form>
+                        <div class="row w-50 m-auto">
+                          <div class="col-12 col-sm-6">
+                          
+                            <label>Ingrese el id del Superheroe</label>
+                          </div>
+                
+                          <div class="col-12 col-sm-6">
+                            <input type="number" class="form-control" id="heroInput">
+                            <p id="error1" style="color: blue; font-style: italic;"></p>
+                          </div>
+                        </div>
+                
+                
+                        <button id="botonConsulta" type="submit" class="btn btn-primary mx-auto d-block my-3">Consultar</button>
+                      </form>
+                 
+            
+                </div>
+              </div>  
 
-          <div class="col-12 col-sm-6">
-            <input type="number" class="form-control" id="heroInput">
-            <p id="error1" style="color: blue; font-style: italic;"></p>
-          </div>
-        </div>
-
-
-        <button id="botonConsulta" type="submit" class="btn btn-primary mx-auto d-block my-3">Consultar</button>
-      </form>
     </section>
 
     <!--Section para mostrar los datos obtenidos desde la api-->
@@ -88,7 +104,7 @@
                 <div class="row">
                     <div class="col">
                         <img id="imagenSuper" src="" alt=""
-                        style="width: 17em;">
+                        style="width: 18em;">
                     </div>
                     <div class="col">
                         <div id="infoHero1" class="card-header">
@@ -102,7 +118,7 @@
             </div>
         </div>
         <div class="col-sm-12 col-md-6">
-            <div id="chartContainer" style="height: 370px;
+            <div id="chartContainer" style="height: 400px;
             width: 100%;"></div>
         </div>
     </div>

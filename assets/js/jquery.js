@@ -22,6 +22,9 @@
 //.- 3.1 Capturar la información ingresada mediante eventos del DOM con jQuery. (1 Punto)
 //Captura del Click
 $(document).ready(function(){
+    //Funcion para musica
+    var audi = document.getElementById("au");
+audi.play();
     //Funcion para ocultar el sector del contenido mientras esta vacio.
 $('#muestrApi').hide();
     //Capturamos el click

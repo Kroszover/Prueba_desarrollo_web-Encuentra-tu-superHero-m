@@ -1,7 +1,17 @@
 /*
  .- 2. Agregar estilos mediante frameworks o librería de CSS, implementando por ejemplo menús de navegación y botones. Los estilos los puedes agregar a tu gusto. Como se muestra en la siguiente imagen de referencia. (1 Punto)
  */
+body{
+    background-image: url(/assets/img/superhero-logos-958x575.png);
+}
 
+header{
+    background-color: aliceblue;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
 #img-navbar{width: 70px;
 height: 40px;}
 #imagen1{display: block;
