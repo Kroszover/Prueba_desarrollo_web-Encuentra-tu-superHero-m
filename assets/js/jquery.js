@@ -1,4 +1,9 @@
 /*
+    Autor: Camilo Lavado
+    Fecha: 04-03-2022
+    version: 1.0.0.0
+*/
+/*
 .- 3. Una vez ingresado el número del héroe a buscar y después de realizar un click sobre el botón de búsqueda, se debe capturar y validar la información para evitar búsquedas que contengan algún texto diferente a números y mostrar la información dinámicamente mediante la librería jQuery y CanvasJS con un gráfico de pastel. Para lograr todo esto se debe: (8 Puntos)
 
 .- 3.1 Capturar la información ingresada mediante eventos del DOM con jQuery. (1 Punto) 
