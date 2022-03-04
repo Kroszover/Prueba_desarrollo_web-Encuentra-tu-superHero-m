@@ -55,26 +55,49 @@
       <form>
         <div class="row w-50 m-auto">
           <div class="col-12 col-sm-6">
-            <label>Ingrese el nombre o el id del Superheroe</label>
+            <label>Ingrese el id del Superheroe</label>
           </div>
 
           <div class="col-12 col-sm-6">
-            <input class="form-control" id="pokemonInput">
+            <input type="number" class="form-control" id="heroInput">
+            <p id="error1" style="color: blue; font-style: italic;"></p>
           </div>
         </div>
 
 
-        <button class="btn btn-primary mx-auto d-block my-3">Consultar</button>
+        <button id="botonConsulta" type="submit" class="btn btn-primary mx-auto d-block my-3">Consultar</button>
       </form>
     </section>
 
     <!--Section para mostrar los datos obtenidos desde la api-->
-    <section>
-      <div class="row">
-      <div class="col-12 col-sm-6 " id="pokeInfo"></div>
-      <div class="col-12 col-sm-6 " id="pokeStats" style="height: 300px; width:auto;"></div>
-      </div>
+    <main>
+    <section id="muestraApi" class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="card">
+                <div class="row">
+                    <div class="col">
+                        <img id="imagenSuper" src="" alt=""
+                        style="width: 17em;">
+                    </div>
+                    <div class="col">
+                        <div id="divHero1" class="card-header">
+
+                        </div>
+                        <div id="divHero2" class="card-body">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div id="chartContainer" style="height: 370px;
+            width: 100%;"></div>
+        </div>
+    </div>
     </section>
+    </main>
   
 
     <!-- Jquery! -->
